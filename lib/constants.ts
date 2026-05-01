@@ -6,7 +6,7 @@ export const personal = {
   phone: "+91 90335 44558",
   location: "Bengaluru, India",
   availability: "Open to async remote (UTC+5:30)",
-  linkedin: "https://linkedin.com/in/bhaviksadiwala",
+  linkedin: "https://www.linkedin.com/in/bhavik-sadiwala/",
   github: "https://github.com/bhaviksadiwala",
   calendly: "https://calendly.com/bhaviksadiwala",
 };
@@ -40,7 +40,7 @@ export const impact = [
   { value: 14, suffix: "+", label: "Years Experience" },
   { value: 70, suffix: "%", label: "Faster Dev (Figma-to-Code)" },
   { value: 40, suffix: "%", label: "Team Productivity Boost" },
-  { value: 500, suffix: "K+", label: "App Downloads" },
+  { value: 1, suffix: "M+", label: "App Downloads" },
 ];
 
 export const services = [
@@ -160,12 +160,14 @@ export const skills = [
 
 export const ebook = {
   badge: "FREE DOWNLOAD",
-  title: "The Android + AI Stack That Gets You Hired Remotely",
-  subtitle:
-    "10 chapters covering LLM integration, AI agents on mobile, automation workflows, and how to position yourself for senior remote roles.",
-  cta: "Download Free",
-  note: "No spam. Instant PDF download.",
-  successMessage: "Check your inbox! The PDF is on its way.",
+  pdfPath: "/how-to-build-an-ai-first-mobile-team-in-90-days.pdf",
+  thumbnailPath: "/ebook-thumbnail.png",
+  title:
+    "How to Build an\nAI-First Mobile Team\nin 90 Days",
+  tagline: "The Playbook for Android & iOS Engineering Leaders",
+  description:
+    "Your competitors are already shipping AI features. Here is the exact stack, team structure, and roadmap to close the gap — on Android and iOS.",
+  cta: "Download PDF",
 };
 
 export const contact = {
@@ -188,8 +190,8 @@ export const contact = {
     {
       icon: "Linkedin" as const,
       label: "View LinkedIn",
-      href: "https://linkedin.com/in/bhaviksadiwala",
-      value: "linkedin.com/in/bhaviksadiwala",
+      href: "https://www.linkedin.com/in/bhavik-sadiwala/",
+      value: "linkedin.com/in/bhavik-sadiwala",
     },
   ],
   timezone:
