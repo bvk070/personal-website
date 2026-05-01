@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #080808;
+  --surface: #111111;
+  --surface-2: #1A1A1A;
+  --border: #222222;
+  --gold: #C9972C;
+  --gold-muted: #8B6914;
+  --text: #F0F0F0;
+  --text-2: #888888;
+  --text-muted: #444444;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+}
+
+@layer base {
+  ::selection {
+    background: rgba(201, 151, 44, 0.3);
+    color: var(--text);
+  }
+}
+
+@layer utilities {
+  .grain {
+    position: relative;
+  }
+  .grain::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url("/grain.svg");
+    background-repeat: repeat;
+    opacity: 0.03;
+    pointer-events: none;
+    z-index: 1;
+  }
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+.cursor-blink {
+  animation: blink 1s step-end infinite;
+}
+
+@keyframes typing-glow {
+  0%, 100% { box-shadow: 0 0 4px rgba(201, 151, 44, 0.3); }
+  50% { box-shadow: 0 0 12px rgba(201, 151, 44, 0.5); }
+}
