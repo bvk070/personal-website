@@ -4,6 +4,7 @@ import WhatIDo from "@/components/WhatIDo";
 import Experience from "@/components/Experience";
 import Skills from "@/components/Skills";
 import Ebook from "@/components/Ebook";
+import Blog from "@/components/Blog";
 import Contact from "@/components/Contact";
 
 export default function Home() {
@@ -15,6 +16,7 @@ export default function Home() {
       <Experience />
       <Skills />
       <Ebook />
+      <Blog />
       <Contact />
     </>
   );

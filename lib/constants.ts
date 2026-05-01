@@ -7,14 +7,15 @@ export const personal = {
   location: "Bengaluru, India",
   availability: "Open to async remote (UTC+5:30)",
   linkedin: "https://www.linkedin.com/in/bhavik-sadiwala/",
-  github: "https://github.com/bhaviksadiwala",
-  calendly: "https://calendly.com/bhaviksadiwala",
+  github: "https://github.com/bvk070",
+  calendly: "https://calendly.com/bhaviksadiwala/30-min-strategy-call-with-bhavik",
 };
 
 export const navLinks = [
   { label: "Home", href: "#home" },
   { label: "Work", href: "#experience" },
   { label: "Skills", href: "#skills" },
+  { label: "Blog", href: "#blogs" },
   { label: "Contact", href: "#contact" },
 ];
 
@@ -170,6 +171,41 @@ export const ebook = {
   cta: "Download PDF",
 };
 
+export const blogs = [
+  {
+    slug: "40-percent-productivity-gap.pdf",
+    title: "Your Mobile Team Is 40% Less Productive Than It Could Be. Here's the Proof.",
+  },
+  {
+    slug: "90-day-plan-ai-mobile.pdf",
+    title: "The 90-Day Plan to Ship Your First AI Mobile Feature",
+  },
+  {
+    slug: "cost-of-not-adopting-ai.pdf",
+    title: "The Real Cost of Not Adopting AI Tooling in Your Mobile Team in 2026",
+  },
+  {
+    slug: "cursor-copilot-claude-android.pdf",
+    title: "Cursor vs GitHub Copilot vs Claude Code for Android Development — What Actually Works",
+  },
+  {
+    slug: "figma-code-connect-android.pdf",
+    title: "Figma Code Connect for Android: How We Cut Component Build Time by 70%",
+  },
+  {
+    slug: "gemini-live-android.pdf",
+    title: "How I Built a Production Voice AI Feature on Android Using Google Gemini Live API",
+  },
+  {
+    slug: "hire-android-ai-engineer.pdf",
+    title: "How to Hire an Android Engineer Who Actually Understands AI in 2026",
+  },
+  {
+    slug: "lessons-ai-integration.pdf",
+    title: "5 Things I Learned Leading AI Integration on a Global Mobile Team",
+  },
+];
+
 export const contact = {
   title: "Let\u2019s Work Together",
   subtitle:
@@ -184,7 +220,7 @@ export const contact = {
     {
       icon: "Calendar" as const,
       label: "Book a Call",
-      href: "https://calendly.com/bhaviksadiwala",
+      href: "https://calendly.com/bhaviksadiwala/30-min-strategy-call-with-bhavik",
       value: "Schedule on Calendly",
     },
     {

@@ -1,5 +1,5 @@
 import { Github, Linkedin, Mail } from "lucide-react";
-import { personal, footer } from "@/lib/constants";
+import { personal } from "@/lib/constants";
 
 export default function Footer() {
   return (
@@ -40,11 +40,6 @@ export default function Footer() {
               <Mail size={20} />
             </a>
           </div>
-        </div>
-
-        {/* Bottom credit */}
-        <div className="mt-8 border-t border-border pt-6 text-center">
-          <p className="text-xs text-text-muted">{footer.credit}</p>
         </div>
       </div>
     </footer>
