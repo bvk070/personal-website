@@ -28,9 +28,9 @@ export default function Navbar() {
     <>
       <nav
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-          scrolled
-            ? "bg-bg/80 backdrop-blur-xl border-b border-border/50"
-            : "bg-transparent"
+          scrolled || mobileOpen
+            ? "bg-bg/90 backdrop-blur-xl border-b border-border/50"
+            : "bg-bg/85 backdrop-blur-xl border-b border-border/40 md:bg-transparent md:backdrop-blur-none md:border-transparent"
         }`}
       >
         <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
@@ -79,7 +79,7 @@ export default function Navbar() {
             animate={{ opacity: 1, x: 0 }}
             exit={{ opacity: 0, x: "100%" }}
             transition={{ type: "spring", damping: 25, stiffness: 200 }}
-            className="fixed inset-0 z-40 flex flex-col items-center justify-center gap-8 bg-bg/95 backdrop-blur-xl md:hidden"
+            className="fixed inset-0 z-40 flex flex-col items-center justify-start gap-8 bg-bg pt-28 md:hidden"
           >
             {navLinks.map((link, i) => (
               <motion.a
@@ -89,7 +89,7 @@ export default function Navbar() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: i * 0.1 }}
-                className="font-cal text-3xl text-text-primary transition-colors hover:text-gold"
+                className="font-cal text-4xl font-semibold text-text-primary transition-colors hover:text-gold"
               >
                 {link.label}
               </motion.a>
@@ -100,7 +100,7 @@ export default function Navbar() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: navLinks.length * 0.1 }}
-              className="mt-4 rounded-btn bg-gold px-8 py-3 text-lg font-semibold text-bg"
+              className="mt-2 rounded-btn bg-gold px-8 py-3 text-xl font-semibold text-bg"
             >
               Hire Me
             </motion.a>
