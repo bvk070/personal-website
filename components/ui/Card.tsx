@@ -6,12 +6,14 @@ interface CardProps {
   children: React.ReactNode;
   className?: string;
   hover?: boolean;
+  padded?: boolean;
 }
 
 export default function Card({
   children,
   className = "",
   hover = true,
+  padded = true,
 }: CardProps) {
   return (
     <motion.div
@@ -20,7 +22,7 @@ export default function Card({
       viewport={{ once: true, margin: "-80px" }}
       transition={{ duration: 0.5 }}
       className={`group relative rounded-card border border-border bg-surface/80 
-        backdrop-blur-sm p-6 transition-all duration-300
+        backdrop-blur-sm ${padded ? "p-6" : ""} transition-all duration-300
         ${hover ? "hover:shadow-card-glow-hover hover:border-gold-muted/50" : ""} 
         ${className}`}
     >
