@@ -15,6 +15,7 @@ export const navLinks = [
   { label: "Home", href: "#home" },
   { label: "Work", href: "#experience" },
   { label: "Skills", href: "#skills" },
+  { label: "Demos", href: "#demos" },
   { label: "Blog", href: "#blogs" },
   { label: "Contact", href: "#contact" },
 ];
@@ -170,6 +171,38 @@ export const ebook = {
     "Your competitors are already shipping AI features. Here is the exact stack, team structure, and roadmap to close the gap — on Android and iOS.",
   cta: "Download PDF",
 };
+
+export const demos = [
+  {
+    id: "yb9nl1HqSsU",
+    title: "Figma Code Connect for Android Design System",
+    blurb:
+      "Wiring a Figma design system straight into Android components — the workflow behind a 70% cut in component build time.",
+    tags: ["Figma", "Android", "Design System"],
+  },
+  {
+    id: "LM2Jn2HDvBw",
+    title: "Streamlining Feature Development Across iOS and Android with AI",
+    blurb:
+      "Using AI tooling to keep one feature moving on both platforms at once, instead of building it twice.",
+    tags: ["AI Tooling", "iOS", "Android"],
+  },
+  {
+    id: "nxWCa0OO3UI",
+    title:
+      "Transforming Customer Support with AI — A Procore Voice Agent Experience",
+    blurb:
+      "A real-time voice agent handling support conversations end to end, built on VAPI with live speech recognition.",
+    tags: ["Voice AI", "VAPI", "LLM"],
+  },
+  {
+    id: "E5C0teK7pyg",
+    title: "Procore Field on Meta Glasses",
+    blurb:
+      "Hands-free construction workflows on Meta smart glasses — voice in, camera vision out, no phone in hand.",
+    tags: ["Meta Glasses", "Wearables", "Vision"],
+  },
+];
 
 export const blogs = [
   {
